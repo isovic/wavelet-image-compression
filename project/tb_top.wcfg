@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/tb_top_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_top" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="42" />
+   <wvobject fp_name="/tb_top/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/outdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">outdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/resultramaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">resultramaddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">resultramaddr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/isstreaming" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isstreaming</obj_property>
+      <obj_property name="ObjectShortName">isstreaming</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/isfinishedprocessing" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isfinishedprocessing</obj_property>
+      <obj_property name="ObjectShortName">isfinishedprocessing</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/outdataready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">outdataready</obj_property>
+      <obj_property name="ObjectShortName">outdataready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/isfinishedtransmitting" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isfinishedtransmitting</obj_property>
+      <obj_property name="ObjectShortName">isfinishedtransmitting</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/requestnewdata" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">requestnewdata</obj_property>
+      <obj_property name="ObjectShortName">requestnewdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cu/currentstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">currentstate</obj_property>
+      <obj_property name="ObjectShortName">currentstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cu/numpixels" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">numpixels[15:0]</obj_property>
+      <obj_property name="ObjectShortName">numpixels[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cu/totalnumpixels" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">totalnumpixels[15:0]</obj_property>
+      <obj_property name="ObjectShortName">totalnumpixels[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cu/numrows" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">numrows</obj_property>
+      <obj_property name="ObjectShortName">numrows</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/cuisfinishedprocessing" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cuisfinishedprocessing</obj_property>
+      <obj_property name="ObjectShortName">cuisfinishedprocessing</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/isfinishedcompressing" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isfinishedcompressing</obj_property>
+      <obj_property name="ObjectShortName">isfinishedcompressing</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/spll" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">spll[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spll[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/splh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">splh[15:0]</obj_property>
+      <obj_property name="ObjectShortName">splh[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/sphl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sphl[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sphl[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/sphlmoving" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sphlmoving[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sphlmoving[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/sphh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sphh[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sphh[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/sphhmoving" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sphhmoving[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sphhmoving[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/currentstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">currentstate</obj_property>
+      <obj_property name="ObjectShortName">currentstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/samecountlh" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">samecountlh</obj_property>
+      <obj_property name="ObjectShortName">samecountlh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/samecounthl" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">samecounthl</obj_property>
+      <obj_property name="ObjectShortName">samecounthl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/samecounthh" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">samecounthh</obj_property>
+      <obj_property name="ObjectShortName">samecounthh</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/datatosend" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datatosend[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datatosend[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/COMPR/addresstosend" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addresstosend[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addresstosend[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/rowready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rowready</obj_property>
+      <obj_property name="ObjectShortName">rowready</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/columnready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">columnready</obj_property>
+      <obj_property name="ObjectShortName">columnready</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/readyfornextdata" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readyfornextdata</obj_property>
+      <obj_property name="ObjectShortName">readyfornextdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/fifoRow/ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram[0:1]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:1]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/fifoColumnW/ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram[0:256]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:256]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/fifoColumnW/dataoutfirst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataoutfirst[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataoutfirst[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/fifoColumnW/dataoutlast" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataoutlast[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataoutlast[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/yll" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yll[7:0]</obj_property>
+      <obj_property name="ObjectShortName">yll[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/ylh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ylh[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ylh[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/yhl" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yhl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">yhl[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/yhh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yhh[7:0]</obj_property>
+      <obj_property name="ObjectShortName">yhh[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/raminaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">raminaddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">raminaddr[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/originaldata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">originaldata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">originaldata[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/ramoutdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ramoutdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ramoutdata[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/ramoutaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ramoutaddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ramoutaddr[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,1 @@
+vhdtdtfi -prj wavelet -o /home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/controlunit.vhi -module controlunit -template /home/ivan/work/tools/Xilinx/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work controlunit.vhd 

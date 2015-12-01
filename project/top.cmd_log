@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/top.xst" -ofn "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/top.syr" 

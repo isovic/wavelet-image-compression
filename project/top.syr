@@ -1,0 +1,1083 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-fgg676
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/memcontroler.vhd" into library work
+Parsing entity <memcontroler>.
+Parsing architecture <Behavioral> of entity <memcontroler>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/haarlp.vhd" into library work
+Parsing entity <haarlp>.
+Parsing architecture <Behavioral> of entity <haarlp>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/haarhp.vhd" into library work
+Parsing entity <haarhp>.
+Parsing architecture <Behavioral> of entity <haarhp>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/fifomem.vhd" into library work
+Parsing entity <fifomem>.
+Parsing architecture <RTL> of entity <fifomem>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/controlunit.vhd" into library work
+Parsing entity <controlunit>.
+Parsing architecture <Behavioral> of entity <controlunit>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/waveleticc.vhd" into library work
+Parsing entity <waveleticc>.
+Parsing architecture <Behavioral> of entity <waveleticc>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/transmitraw.vhd" into library work
+Parsing entity <transmitraw>.
+Parsing architecture <Behavioral> of entity <transmitraw>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/ramnormal.vhd" into library work
+Parsing entity <ramnormal>.
+Parsing architecture <Behavioral> of entity <ramnormal>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/ramfile.vhd" into library work
+Parsing entity <ramfile>.
+Parsing architecture <Behavioral> of entity <ramfile>.
+Parsing VHDL file "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <waveleticc> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <controlunit> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <fifomem> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <fifomem> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <haarlp> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <haarhp> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <memcontroler> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ramfile> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ramnormal> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <transmitraw> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/top.vhd".
+        IMAGE_WIDTH = 256
+        IMAGE_HEIGHT = 256
+        ADDR_WIDTH = 16
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <waveleticc>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/waveleticc.vhd".
+        IMAGE_WIDTH = 256
+        IMAGE_HEIGHT = 256
+        ADDR_WIDTH = 16
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <waveleticc> synthesized.
+
+Synthesizing Unit <controlunit>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/controlunit.vhd".
+        IMAGE_WIDTH = 256
+        IMAGE_HEIGHT = 256
+        ADDR_WIDTH = 16
+    Found 4-bit register for signal <currentState>.
+    Found 16-bit register for signal <numPixels>.
+    Found 1-bit register for signal <sigColumnReady>.
+    Found 1-bit register for signal <sigRowReady>.
+    Found 32-bit register for signal <numRows>.
+    Found 16-bit register for signal <sigAddrIn>.
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 13                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | statereset                                     |
+    | Power Up State     | statereset                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <numPixels[15]_GND_8_o_add_2_OUT> created at line 91.
+    Found 16-bit adder for signal <sigAddrIn[15]_GND_8_o_add_5_OUT> created at line 98.
+    Found 32-bit adder for signal <numRows[31]_GND_8_o_add_7_OUT> created at line 102.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <controlunit> synthesized.
+
+Synthesizing Unit <fifomem_1>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/fifomem.vhd".
+        DATA_WIDTH = 8
+        FIFO_DEPTH = 2
+    Found 8-bit register for signal <RAM<1>>.
+    Found 8-bit register for signal <RAM<0>>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <fifomem_1> synthesized.
+
+Synthesizing Unit <fifomem_2>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/fifomem.vhd".
+        DATA_WIDTH = 8
+        FIFO_DEPTH = 257
+    Found 8-bit register for signal <RAM<1>>.
+    Found 8-bit register for signal <RAM<2>>.
+    Found 8-bit register for signal <RAM<3>>.
+    Found 8-bit register for signal <RAM<4>>.
+    Found 8-bit register for signal <RAM<5>>.
+    Found 8-bit register for signal <RAM<6>>.
+    Found 8-bit register for signal <RAM<7>>.
+    Found 8-bit register for signal <RAM<8>>.
+    Found 8-bit register for signal <RAM<9>>.
+    Found 8-bit register for signal <RAM<10>>.
+    Found 8-bit register for signal <RAM<11>>.
+    Found 8-bit register for signal <RAM<12>>.
+    Found 8-bit register for signal <RAM<13>>.
+    Found 8-bit register for signal <RAM<14>>.
+    Found 8-bit register for signal <RAM<15>>.
+    Found 8-bit register for signal <RAM<16>>.
+    Found 8-bit register for signal <RAM<17>>.
+    Found 8-bit register for signal <RAM<18>>.
+    Found 8-bit register for signal <RAM<19>>.
+    Found 8-bit register for signal <RAM<20>>.
+    Found 8-bit register for signal <RAM<21>>.
+    Found 8-bit register for signal <RAM<22>>.
+    Found 8-bit register for signal <RAM<23>>.
+    Found 8-bit register for signal <RAM<24>>.
+    Found 8-bit register for signal <RAM<25>>.
+    Found 8-bit register for signal <RAM<26>>.
+    Found 8-bit register for signal <RAM<27>>.
+    Found 8-bit register for signal <RAM<28>>.
+    Found 8-bit register for signal <RAM<29>>.
+    Found 8-bit register for signal <RAM<30>>.
+    Found 8-bit register for signal <RAM<31>>.
+    Found 8-bit register for signal <RAM<32>>.
+    Found 8-bit register for signal <RAM<33>>.
+    Found 8-bit register for signal <RAM<34>>.
+    Found 8-bit register for signal <RAM<35>>.
+    Found 8-bit register for signal <RAM<36>>.
+    Found 8-bit register for signal <RAM<37>>.
+    Found 8-bit register for signal <RAM<38>>.
+    Found 8-bit register for signal <RAM<39>>.
+    Found 8-bit register for signal <RAM<40>>.
+    Found 8-bit register for signal <RAM<41>>.
+    Found 8-bit register for signal <RAM<42>>.
+    Found 8-bit register for signal <RAM<43>>.
+    Found 8-bit register for signal <RAM<44>>.
+    Found 8-bit register for signal <RAM<45>>.
+    Found 8-bit register for signal <RAM<46>>.
+    Found 8-bit register for signal <RAM<47>>.
+    Found 8-bit register for signal <RAM<48>>.
+    Found 8-bit register for signal <RAM<49>>.
+    Found 8-bit register for signal <RAM<50>>.
+    Found 8-bit register for signal <RAM<51>>.
+    Found 8-bit register for signal <RAM<52>>.
+    Found 8-bit register for signal <RAM<53>>.
+    Found 8-bit register for signal <RAM<54>>.
+    Found 8-bit register for signal <RAM<55>>.
+    Found 8-bit register for signal <RAM<56>>.
+    Found 8-bit register for signal <RAM<57>>.
+    Found 8-bit register for signal <RAM<58>>.
+    Found 8-bit register for signal <RAM<59>>.
+    Found 8-bit register for signal <RAM<60>>.
+    Found 8-bit register for signal <RAM<61>>.
+    Found 8-bit register for signal <RAM<62>>.
+    Found 8-bit register for signal <RAM<63>>.
+    Found 8-bit register for signal <RAM<64>>.
+    Found 8-bit register for signal <RAM<65>>.
+    Found 8-bit register for signal <RAM<66>>.
+    Found 8-bit register for signal <RAM<67>>.
+    Found 8-bit register for signal <RAM<68>>.
+    Found 8-bit register for signal <RAM<69>>.
+    Found 8-bit register for signal <RAM<70>>.
+    Found 8-bit register for signal <RAM<71>>.
+    Found 8-bit register for signal <RAM<72>>.
+    Found 8-bit register for signal <RAM<73>>.
+    Found 8-bit register for signal <RAM<74>>.
+    Found 8-bit register for signal <RAM<75>>.
+    Found 8-bit register for signal <RAM<76>>.
+    Found 8-bit register for signal <RAM<77>>.
+    Found 8-bit register for signal <RAM<78>>.
+    Found 8-bit register for signal <RAM<79>>.
+    Found 8-bit register for signal <RAM<80>>.
+    Found 8-bit register for signal <RAM<81>>.
+    Found 8-bit register for signal <RAM<82>>.
+    Found 8-bit register for signal <RAM<83>>.
+    Found 8-bit register for signal <RAM<84>>.
+    Found 8-bit register for signal <RAM<85>>.
+    Found 8-bit register for signal <RAM<86>>.
+    Found 8-bit register for signal <RAM<87>>.
+    Found 8-bit register for signal <RAM<88>>.
+    Found 8-bit register for signal <RAM<89>>.
+    Found 8-bit register for signal <RAM<90>>.
+    Found 8-bit register for signal <RAM<91>>.
+    Found 8-bit register for signal <RAM<92>>.
+    Found 8-bit register for signal <RAM<93>>.
+    Found 8-bit register for signal <RAM<94>>.
+    Found 8-bit register for signal <RAM<95>>.
+    Found 8-bit register for signal <RAM<96>>.
+    Found 8-bit register for signal <RAM<97>>.
+    Found 8-bit register for signal <RAM<98>>.
+    Found 8-bit register for signal <RAM<99>>.
+    Found 8-bit register for signal <RAM<100>>.
+    Found 8-bit register for signal <RAM<101>>.
+    Found 8-bit register for signal <RAM<102>>.
+    Found 8-bit register for signal <RAM<103>>.
+    Found 8-bit register for signal <RAM<104>>.
+    Found 8-bit register for signal <RAM<105>>.
+    Found 8-bit register for signal <RAM<106>>.
+    Found 8-bit register for signal <RAM<107>>.
+    Found 8-bit register for signal <RAM<108>>.
+    Found 8-bit register for signal <RAM<109>>.
+    Found 8-bit register for signal <RAM<110>>.
+    Found 8-bit register for signal <RAM<111>>.
+    Found 8-bit register for signal <RAM<112>>.
+    Found 8-bit register for signal <RAM<113>>.
+    Found 8-bit register for signal <RAM<114>>.
+    Found 8-bit register for signal <RAM<115>>.
+    Found 8-bit register for signal <RAM<116>>.
+    Found 8-bit register for signal <RAM<117>>.
+    Found 8-bit register for signal <RAM<118>>.
+    Found 8-bit register for signal <RAM<119>>.
+    Found 8-bit register for signal <RAM<120>>.
+    Found 8-bit register for signal <RAM<121>>.
+    Found 8-bit register for signal <RAM<122>>.
+    Found 8-bit register for signal <RAM<123>>.
+    Found 8-bit register for signal <RAM<124>>.
+    Found 8-bit register for signal <RAM<125>>.
+    Found 8-bit register for signal <RAM<126>>.
+    Found 8-bit register for signal <RAM<127>>.
+    Found 8-bit register for signal <RAM<128>>.
+    Found 8-bit register for signal <RAM<129>>.
+    Found 8-bit register for signal <RAM<130>>.
+    Found 8-bit register for signal <RAM<131>>.
+    Found 8-bit register for signal <RAM<132>>.
+    Found 8-bit register for signal <RAM<133>>.
+    Found 8-bit register for signal <RAM<134>>.
+    Found 8-bit register for signal <RAM<135>>.
+    Found 8-bit register for signal <RAM<136>>.
+    Found 8-bit register for signal <RAM<137>>.
+    Found 8-bit register for signal <RAM<138>>.
+    Found 8-bit register for signal <RAM<139>>.
+    Found 8-bit register for signal <RAM<140>>.
+    Found 8-bit register for signal <RAM<141>>.
+    Found 8-bit register for signal <RAM<142>>.
+    Found 8-bit register for signal <RAM<143>>.
+    Found 8-bit register for signal <RAM<144>>.
+    Found 8-bit register for signal <RAM<145>>.
+    Found 8-bit register for signal <RAM<146>>.
+    Found 8-bit register for signal <RAM<147>>.
+    Found 8-bit register for signal <RAM<148>>.
+    Found 8-bit register for signal <RAM<149>>.
+    Found 8-bit register for signal <RAM<150>>.
+    Found 8-bit register for signal <RAM<151>>.
+    Found 8-bit register for signal <RAM<152>>.
+    Found 8-bit register for signal <RAM<153>>.
+    Found 8-bit register for signal <RAM<154>>.
+    Found 8-bit register for signal <RAM<155>>.
+    Found 8-bit register for signal <RAM<156>>.
+    Found 8-bit register for signal <RAM<157>>.
+    Found 8-bit register for signal <RAM<158>>.
+    Found 8-bit register for signal <RAM<159>>.
+    Found 8-bit register for signal <RAM<160>>.
+    Found 8-bit register for signal <RAM<161>>.
+    Found 8-bit register for signal <RAM<162>>.
+    Found 8-bit register for signal <RAM<163>>.
+    Found 8-bit register for signal <RAM<164>>.
+    Found 8-bit register for signal <RAM<165>>.
+    Found 8-bit register for signal <RAM<166>>.
+    Found 8-bit register for signal <RAM<167>>.
+    Found 8-bit register for signal <RAM<168>>.
+    Found 8-bit register for signal <RAM<169>>.
+    Found 8-bit register for signal <RAM<170>>.
+    Found 8-bit register for signal <RAM<171>>.
+    Found 8-bit register for signal <RAM<172>>.
+    Found 8-bit register for signal <RAM<173>>.
+    Found 8-bit register for signal <RAM<174>>.
+    Found 8-bit register for signal <RAM<175>>.
+    Found 8-bit register for signal <RAM<176>>.
+    Found 8-bit register for signal <RAM<177>>.
+    Found 8-bit register for signal <RAM<178>>.
+    Found 8-bit register for signal <RAM<179>>.
+    Found 8-bit register for signal <RAM<180>>.
+    Found 8-bit register for signal <RAM<181>>.
+    Found 8-bit register for signal <RAM<182>>.
+    Found 8-bit register for signal <RAM<183>>.
+    Found 8-bit register for signal <RAM<184>>.
+    Found 8-bit register for signal <RAM<185>>.
+    Found 8-bit register for signal <RAM<186>>.
+    Found 8-bit register for signal <RAM<187>>.
+    Found 8-bit register for signal <RAM<188>>.
+    Found 8-bit register for signal <RAM<189>>.
+    Found 8-bit register for signal <RAM<190>>.
+    Found 8-bit register for signal <RAM<191>>.
+    Found 8-bit register for signal <RAM<192>>.
+    Found 8-bit register for signal <RAM<193>>.
+    Found 8-bit register for signal <RAM<194>>.
+    Found 8-bit register for signal <RAM<195>>.
+    Found 8-bit register for signal <RAM<196>>.
+    Found 8-bit register for signal <RAM<197>>.
+    Found 8-bit register for signal <RAM<198>>.
+    Found 8-bit register for signal <RAM<199>>.
+    Found 8-bit register for signal <RAM<200>>.
+    Found 8-bit register for signal <RAM<201>>.
+    Found 8-bit register for signal <RAM<202>>.
+    Found 8-bit register for signal <RAM<203>>.
+    Found 8-bit register for signal <RAM<204>>.
+    Found 8-bit register for signal <RAM<205>>.
+    Found 8-bit register for signal <RAM<206>>.
+    Found 8-bit register for signal <RAM<207>>.
+    Found 8-bit register for signal <RAM<208>>.
+    Found 8-bit register for signal <RAM<209>>.
+    Found 8-bit register for signal <RAM<210>>.
+    Found 8-bit register for signal <RAM<211>>.
+    Found 8-bit register for signal <RAM<212>>.
+    Found 8-bit register for signal <RAM<213>>.
+    Found 8-bit register for signal <RAM<214>>.
+    Found 8-bit register for signal <RAM<215>>.
+    Found 8-bit register for signal <RAM<216>>.
+    Found 8-bit register for signal <RAM<217>>.
+    Found 8-bit register for signal <RAM<218>>.
+    Found 8-bit register for signal <RAM<219>>.
+    Found 8-bit register for signal <RAM<220>>.
+    Found 8-bit register for signal <RAM<221>>.
+    Found 8-bit register for signal <RAM<222>>.
+    Found 8-bit register for signal <RAM<223>>.
+    Found 8-bit register for signal <RAM<224>>.
+    Found 8-bit register for signal <RAM<225>>.
+    Found 8-bit register for signal <RAM<226>>.
+    Found 8-bit register for signal <RAM<227>>.
+    Found 8-bit register for signal <RAM<228>>.
+    Found 8-bit register for signal <RAM<229>>.
+    Found 8-bit register for signal <RAM<230>>.
+    Found 8-bit register for signal <RAM<231>>.
+    Found 8-bit register for signal <RAM<232>>.
+    Found 8-bit register for signal <RAM<233>>.
+    Found 8-bit register for signal <RAM<234>>.
+    Found 8-bit register for signal <RAM<235>>.
+    Found 8-bit register for signal <RAM<236>>.
+    Found 8-bit register for signal <RAM<237>>.
+    Found 8-bit register for signal <RAM<238>>.
+    Found 8-bit register for signal <RAM<239>>.
+    Found 8-bit register for signal <RAM<240>>.
+    Found 8-bit register for signal <RAM<241>>.
+    Found 8-bit register for signal <RAM<242>>.
+    Found 8-bit register for signal <RAM<243>>.
+    Found 8-bit register for signal <RAM<244>>.
+    Found 8-bit register for signal <RAM<245>>.
+    Found 8-bit register for signal <RAM<246>>.
+    Found 8-bit register for signal <RAM<247>>.
+    Found 8-bit register for signal <RAM<248>>.
+    Found 8-bit register for signal <RAM<249>>.
+    Found 8-bit register for signal <RAM<250>>.
+    Found 8-bit register for signal <RAM<251>>.
+    Found 8-bit register for signal <RAM<252>>.
+    Found 8-bit register for signal <RAM<253>>.
+    Found 8-bit register for signal <RAM<254>>.
+    Found 8-bit register for signal <RAM<255>>.
+    Found 8-bit register for signal <RAM<256>>.
+    Found 8-bit register for signal <RAM<0>>.
+    Summary:
+	inferred 2056 D-type flip-flop(s).
+Unit <fifomem_2> synthesized.
+
+Synthesizing Unit <haarlp>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/haarlp.vhd".
+    Found 9-bit adder for signal <n0008> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <haarlp> synthesized.
+
+Synthesizing Unit <haarhp>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/haarhp.vhd".
+    Found 9-bit subtractor for signal <GND_12_o_GND_12_o_sub_1_OUT> created at line 34.
+    Found 8-bit adder for signal <y> created at line 28.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <haarhp> synthesized.
+
+Synthesizing Unit <memcontroler>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/memcontroler.vhd".
+        THRESHOLD = 10
+        DATA_WIDTH = 8
+        ADDR_WIDTH = 16
+        IMAGE_WIDTH = 256
+        IMAGE_HEIGHT = 256
+    Found 6-bit register for signal <currentState>.
+    Found 16-bit register for signal <spLL>.
+    Found 16-bit register for signal <spLH>.
+    Found 16-bit register for signal <spHL>.
+    Found 16-bit register for signal <spHH>.
+    Found 32-bit register for signal <sameCountLH>.
+    Found 32-bit register for signal <sameCountHL>.
+    Found 32-bit register for signal <sameCountHH>.
+    Found 8-bit register for signal <dataToSend>.
+    Found 16-bit register for signal <addressToSend>.
+    Found 6-bit register for signal <returnState>.
+    Found 16-bit register for signal <spHLMoving>.
+    Found 16-bit register for signal <spHHMoving>.
+    Found 16-bit adder for signal <spLL[15]_GND_13_o_add_3_OUT> created at line 169.
+    Found 32-bit adder for signal <sameCountLH[31]_GND_13_o_add_5_OUT> created at line 179.
+    Found 32-bit adder for signal <sameCountHL[31]_GND_13_o_add_19_OUT> created at line 214.
+    Found 32-bit adder for signal <sameCountHH[31]_GND_13_o_add_33_OUT> created at line 242.
+    Found 16-bit adder for signal <spHL[15]_GND_13_o_add_64_OUT> created at line 319.
+    Found 16-bit adder for signal <spHH[15]_GND_13_o_add_74_OUT> created at line 341.
+    Found 16-bit adder for signal <spHLMoving[15]_GND_13_o_add_78_OUT> created at line 361.
+    Found 16-bit adder for signal <spHHMoving[15]_GND_13_o_add_82_OUT> created at line 372.
+    Found 16-bit adder for signal <spLH[15]_GND_13_o_add_83_OUT> created at line 373.
+    Found 8-bit subtractor for signal <sameCountLH[31]_GND_13_o_sub_48_OUT<7:0>> created at line 283.
+    Found 8-bit subtractor for signal <sameCountHL[31]_GND_13_o_sub_58_OUT<7:0>> created at line 305.
+    Found 8-bit subtractor for signal <sameCountHH[31]_GND_13_o_sub_68_OUT<7:0>> created at line 327.
+    Found 64x1-bit Read Only RAM for signal <readyForNextData>
+    Found 32x1-bit Read Only RAM for signal <weOut>
+    Found 6-bit comparator greater for signal <n0000> created at line 143
+    Found 6-bit comparator greater for signal <n0002> created at line 163
+    Found 6-bit comparator greater for signal <n0004> created at line 167
+    Found 8-bit comparator greater for signal <inLH[7]_GND_13_o_LessThan_52_o> created at line 289
+    Found 8-bit comparator greater for signal <inHL[7]_GND_13_o_LessThan_62_o> created at line 311
+    Found 8-bit comparator greater for signal <inHH[7]_GND_13_o_LessThan_72_o> created at line 333
+    Found 8-bit comparator lessequal for signal <n0504> created at line 473
+    Found 16-bit comparator equal for signal <spHLMoving[15]_spHL[15]_equal_533_o> created at line 605
+    Found 16-bit comparator equal for signal <spHHMoving[15]_spHH[15]_equal_535_o> created at line 630
+    Summary:
+	inferred   2 RAM(s).
+	inferred  12 Adder/Subtractor(s).
+	inferred 228 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+	inferred  56 Multiplexer(s).
+Unit <memcontroler> synthesized.
+
+Synthesizing Unit <ramfile>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/ramfile.vhd".
+        RAM_SIZE = 65536
+    Found 65536x8-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 8-bit register for signal <dataOut>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ramfile> synthesized.
+
+Synthesizing Unit <ramnormal>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/ramnormal.vhd".
+        RAM_SIZE = 65536
+        ADDR_WIDTH = 16
+    Found 65536x8-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 8-bit register for signal <dataOut>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <ramnormal> synthesized.
+
+Synthesizing Unit <transmitraw>.
+    Related source file is "/home/ivan/Dropbox/IRB/projekti/E2LP/implementirane_vjezbe/wavelet/wavelet/transmitraw.vhd".
+        IMAGE_WIDTH = 256
+        IMAGE_HEIGHT = 256
+        ADDR_WIDTH = 16
+    Found 3-bit register for signal <currentState>.
+    Found 16-bit register for signal <sigAddress>.
+    Found 8-bit register for signal <sigDataOut>.
+    Found 32-bit register for signal <numSentPixels>.
+    Found finite state machine <FSM_1> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | statereset                                     |
+    | Power Up State     | statereset                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <sigAddress[15]_GND_26_o_add_2_OUT> created at line 79.
+    Found 32-bit adder for signal <numSentPixels[31]_GND_26_o_add_4_OUT> created at line 83.
+    Found 16-bit subtractor for signal <GND_26_o_GND_26_o_sub_27_OUT<15:0>> created at line 120.
+    Found 16-bit comparator equal for signal <sigAddress[15]_GND_26_o_equal_28_o> created at line 120
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <transmitraw> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 32x1-bit single-port Read Only RAM                    : 1
+ 64x1-bit single-port Read Only RAM                    : 1
+ 65536x8-bit single-port RAM                           : 2
+# Adders/Subtractors                                   : 27
+ 16-bit adder                                          : 9
+ 16-bit subtractor                                     : 1
+ 32-bit adder                                          : 5
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 3
+# Registers                                            : 539
+ 1-bit register                                        : 2
+ 16-bit register                                       : 10
+ 32-bit register                                       : 5
+ 6-bit register                                        : 2
+ 8-bit register                                        : 520
+# Comparators                                          : 10
+ 16-bit comparator equal                               : 3
+ 6-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 69
+ 1-bit 2-to-1 multiplexer                              : 6
+ 16-bit 2-to-1 multiplexer                             : 23
+ 32-bit 2-to-1 multiplexer                             : 8
+ 6-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 22
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <controlunit>.
+The following registers are absorbed into counter <numRows>: 1 register on signal <numRows>.
+The following registers are absorbed into counter <sigAddrIn>: 1 register on signal <sigAddrIn>.
+Unit <controlunit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <memcontroler>.
+The following registers are absorbed into counter <spLH>: 1 register on signal <spLH>.
+The following registers are absorbed into counter <spHL>: 1 register on signal <spHL>.
+The following registers are absorbed into counter <spHH>: 1 register on signal <spHH>.
+The following registers are absorbed into counter <spHLMoving>: 1 register on signal <spHLMoving>.
+The following registers are absorbed into counter <spHHMoving>: 1 register on signal <spHHMoving>.
+The following registers are absorbed into counter <spLL>: 1 register on signal <spLL>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_readyForNextData> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <currentState>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <readyForNextData> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weOut> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(currentState<5:4>,currentState<2:0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <weOut>         |          |
+    -----------------------------------------------------------------------
+Unit <memcontroler> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ramfile>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <dataOut>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65536-word x 8-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <en>            | high     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <dataOut>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ramfile> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ramnormal>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <dataOut>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65536-word x 8-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <dataIn>        |          |
+    |     doA            | connected to signal <dataOut>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ramnormal> synthesized (advanced).
+
+Synthesizing (advanced) Unit <transmitraw>.
+The following registers are absorbed into counter <numSentPixels>: 1 register on signal <numSentPixels>.
+The following registers are absorbed into counter <sigAddress>: 1 register on signal <sigAddress>.
+Unit <transmitraw> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 32x1-bit single-port distributed Read Only RAM        : 1
+ 64x1-bit single-port distributed Read Only RAM        : 1
+ 65536x8-bit single-port block RAM                     : 2
+# Adders/Subtractors                                   : 17
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 32-bit adder                                          : 3
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 3
+ 9-bit subtractor                                      : 3
+# Counters                                             : 10
+ 16-bit up counter                                     : 8
+ 32-bit up counter                                     : 2
+# Registers                                            : 4286
+ Flip-Flops                                            : 4286
+# Comparators                                          : 10
+ 16-bit comparator equal                               : 3
+ 6-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 63
+ 1-bit 2-to-1 multiplexer                              : 6
+ 16-bit 2-to-1 multiplexer                             : 19
+ 32-bit 2-to-1 multiplexer                             : 6
+ 6-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 22
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <wicc/cu/FSM_0> on signal <currentState[1:10]> with one-hot encoding.
+-----------------------------
+ State         | Encoding
+-----------------------------
+ statereset    | 0000000001
+ statereset2   | 0000000010
+ statestream   | 0000000100
+ statestream0  | 0000001000
+ statestream1  | 0000010000
+ statestream2  | 0000100000
+ statestream3  | 0001000000
+ statenewrow   | 0010000000
+ statenewrow2  | 0100000000
+ statefinished | 1000000000
+-----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <transmitter/FSM_1> on signal <currentState[1:3]> with user encoding.
+--------------------------------------
+ State                    | Encoding
+--------------------------------------
+ statereset               | 000
+ statewaitforrequest      | 001
+ statestream              | 010
+ statestream2             | 011
+ statewaitforrequestnext  | 100
+ statewaitforrequestnext2 | 101
+ statefinished            | 110
+ statefinished2           | 111
+--------------------------------------
+
+Optimizing unit <fifomem_1> ...
+
+Optimizing unit <fifomem_2> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <waveleticc> ...
+
+Optimizing unit <memcontroler> ...
+
+Optimizing unit <controlunit> ...
+
+Optimizing unit <transmitraw> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 23.
+FlipFlop wicc/compressor/currentState_1 has been replicated 1 time(s)
+FlipFlop wicc/compressor/currentState_2 has been replicated 2 time(s)
+FlipFlop wicc/compressor/currentState_3 has been replicated 2 time(s)
+FlipFlop wicc/compressor/currentState_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <top> :
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_7>.
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_6>.
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_5>.
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_4>.
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_3>.
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_2>.
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_1>.
+	Found 256-bit shift register for signal <wicc/fifoColumnH/RAM_256_0>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_7>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_6>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_5>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_4>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_3>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_2>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_1>.
+	Found 256-bit shift register for signal <wicc/fifoColumnW/RAM_256_0>.
+Unit <top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 405
+ Flip-Flops                                            : 405
+# Shift Registers                                      : 16
+ 256-bit shift register                                : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1720
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 168
+#      LUT2                        : 200
+#      LUT3                        : 148
+#      LUT4                        : 51
+#      LUT5                        : 127
+#      LUT6                        : 264
+#      MUXCY                       : 376
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 368
+# FlipFlops/Latches                : 692
+#      FD                          : 4
+#      FDC                         : 24
+#      FDCE                        : 303
+#      FDE                         : 232
+#      FDP                         : 1
+#      FDRE                        : 128
+# RAMS                             : 64
+#      RAMB16BWER                  : 64
+# Shift Registers                  : 128
+#      SRLC32E                     : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg676-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             692  out of  54576     1%  
+ Number of Slice LUTs:                 1094  out of  27288     4%  
+    Number used as Logic:               966  out of  27288     3%  
+    Number used as Memory:              128  out of   6408     1%  
+       Number used as SRL:              128
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1388
+   Number with an unused Flip Flop:     696  out of   1388    50%  
+   Number with an unused LUT:           294  out of   1388    21%  
+   Number of fully used LUT-FF pairs:   398  out of   1388    28%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    358     3%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               64  out of    116    55%  
+    Number using Block RAM only:         64
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 884   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.492ns (Maximum Frequency: 133.474MHz)
+   Minimum input arrival time before clock: 5.775ns
+   Maximum output required time after clock: 6.367ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.492ns (frequency: 133.474MHz)
+  Total number of paths / destination ports: 63478 / 3000
+-------------------------------------------------------------------------
+Delay:               7.492ns (Levels of Logic = 9)
+  Source:            wicc/fifoColumnH/RAM_256_0 (FF)
+  Destination:       wicc/compressor/dataToSend_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: wicc/fifoColumnH/RAM_256_0 to wicc/compressor/dataToSend_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.721  wicc/fifoColumnH/RAM_256_0 (wicc/fifoColumnH/RAM_256_0)
+     LUT2:I0->O            1   0.203   0.000  wicc/WHH/Msub_GND_12_o_GND_12_o_sub_1_OUT_lut<0> (wicc/WHH/Msub_GND_12_o_GND_12_o_sub_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  wicc/WHH/Msub_GND_12_o_GND_12_o_sub_1_OUT_cy<0> (wicc/WHH/Msub_GND_12_o_GND_12_o_sub_1_OUT_cy<0>)
+     XORCY:CI->O           9   0.180   0.830  wicc/WHH/Msub_GND_12_o_GND_12_o_sub_1_OUT_xor<1> (wicc/WHH/GND_12_o_GND_12_o_sub_1_OUT<1>)
+     LUT2:I1->O            3   0.205   0.651  wicc/WHH/Madd_y_lut<0>1_SW0 (N1221)
+     LUT6:I5->O            5   0.205   0.819  wicc/WHH/Madd_y_xor<5>111 (wicc/WHH/Madd_y_xor<5>11)
+     LUT6:I4->O           13   0.203   0.933  wicc/compressor/inHH[7]_GND_13_o_LessThan_72_o1 (wicc/compressor/inHH[7]_GND_13_o_LessThan_72_o)
+     LUT6:I5->O            4   0.205   0.683  wicc/compressor/Mmux_dataToSend[7]_inLL[7]_mux_322_OUT1082 (wicc/compressor/Mmux_dataToSend[7]_inLL[7]_mux_322_OUT108)
+     MUXF7:S->O            1   0.148   0.580  wicc/compressor/Mmux_dataToSend[7]_inLL[7]_mux_322_OUT204_SW1 (N178)
+     LUT6:I5->O            1   0.205   0.000  wicc/compressor/Mmux_dataToSend[7]_inLL[7]_mux_322_OUT2011 (wicc/compressor/dataToSend[7]_inLL[7]_mux_322_OUT<3>)
+     FDE:D                     0.102          wicc/compressor/dataToSend_3
+    ----------------------------------------
+    Total                      7.492ns (2.275ns logic, 5.217ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 499 / 499
+-------------------------------------------------------------------------
+Offset:              5.775ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       wicc/compressor/sameCountLH_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to wicc/compressor/sameCountLH_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.222   1.538  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            3   0.203   0.995  wicc/compressor/_n1841_inv_SW0 (N2)
+     LUT6:I1->O           32   0.203   1.291  wicc/compressor/_n1841_inv (wicc/compressor/_n1841_inv)
+     FDRE:CE                   0.322          wicc/compressor/sameCountLH_0
+    ----------------------------------------
+    Total                      5.775ns (1.950ns logic, 3.825ns route)
+                                       (33.8% logic, 66.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 11
+-------------------------------------------------------------------------
+Offset:              6.367ns (Levels of Logic = 2)
+  Source:            wicc/compressor/currentState_5 (FF)
+  Destination:       isFinishedProcessing (PAD)
+  Source Clock:      clk rising
+
+  Data Path: wicc/compressor/currentState_5 to isFinishedProcessing
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            178   0.447   2.262  wicc/compressor/currentState_5 (wicc/compressor/currentState_5)
+     LUT4:I1->O           11   0.205   0.882  wicc/compressor/Mmux_finishedCompressing11 (isFinishedProcessing_OBUF)
+     OBUF:I->O                 2.571          isFinishedProcessing_OBUF (isFinishedProcessing)
+    ----------------------------------------
+    Total                      6.367ns (3.223ns logic, 3.144ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.492|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 90.00 secs
+Total CPU time to Xst completion: 80.01 secs
+ 
+--> 
+
+
+Total memory usage is 556740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
